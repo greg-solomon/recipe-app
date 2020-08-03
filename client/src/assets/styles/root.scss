@@ -1,0 +1,127 @@
+$boxShadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$blue: #0063ce;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #c62828;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: rgb(33, 33, 33);
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  letter-spacing: 0.05rem;
+}
+
+html {
+  background-color: #fafafa;
+}
+
+.spinner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header + div {
+  margin: 0 auto;
+  margin-top: 14vh;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    filter: brightness(110%);
+  }
+}
+
+.modal-body {
+  padding: 2rem;
+  background-color: white;
+  margin: 0 auto;
+  position: absolute;
+  min-width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.dropdown {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 2%;
+  top: 24%;
+  cursor: pointer;
+  font-size: 1.75rem;
+  margin-right: 2%;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: #fafafa;
+    box-shadow: $boxShadow;
+  }
+}
+
+.dropdown-options {
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  right: 0;
+  padding: 12px;
+  cursor: pointer;
+}
+
+@import "./header";
+@import "./form";
+@import "./home";
+@import "./recipe-card";
+@import "./recipe-detail";
+@import "./add_recipe";
+@import "./profile";
+@import "./search";

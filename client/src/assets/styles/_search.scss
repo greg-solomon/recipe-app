@@ -1,0 +1,29 @@
+.search-form-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 14vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+  .search-wrapper {
+    width: 100%;
+    max-width: 800px;
+  }
+  .grid {
+    margin-top: 2rem;
+  }
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 48px;
+  font-size: 22px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  color: $dark;
+}

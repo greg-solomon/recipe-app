@@ -1,0 +1,159 @@
+.profile-wrapper {
+  max-width: 900px;
+  width: 95%;
+  margin-top: 16vh;
+  padding-bottom: 4vh;
+  h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+.user-recipes {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+
+.recipe-entry {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 1.5rem auto;
+  max-width: 300px;
+
+  @media (min-width: 600px) {
+    width: 100%;
+    max-width: 100%;
+    flex-flow: row nowrap;
+    height: 200px;
+  }
+}
+
+.recipe-entry-image {
+  height: 100%;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.recipe-entry-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.profile-content {
+  width: 95%;
+  margin: 0 auto;
+
+  h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.delete-btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.setting-wrapper {
+  width: 95%;
+  max-width: 600px;
+  padding: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  h1 {
+    font-size: 3rem;
+  }
+  margin-top: 6rem;
+
+  @media (min-width: 570px) {
+    margin: 0;
+  }
+}
+
+.setting-item {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 1.5rem 0;
+  margin: 1rem auto;
+  border-bottom: 0.5px solid rgba(6b, 6b, 6b, 0.3);
+  position: relative;
+  font-size: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-width: 570px) {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: 0;
+  }
+}
+
+.setting-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+
+  p {
+    font-weight: 800;
+    font-size: 1.15rem;
+    @media (min-width: 700px) {
+      font-size: 1.25rem;
+    }
+  }
+}
+.setting-value {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 70%;
+  position: relative;
+  margin: 1.5rem auto;
+  p {
+    display: inline-block;
+    white-space: normal;
+    font-size: 1.15rem;
+    text-align: center;
+  }
+  .edit-btn {
+    position: absolute;
+    right: 0;
+  }
+  @media (min-width: 570px) {
+    flex-wrap: nowrap;
+    margin: 0;
+    justify-content: flex-end;
+
+    .display-name {
+      margin-right: 3.5rem;
+    }
+
+    .color-pick-preview {
+      margin-right: 3.5rem;
+    }
+  }
+}

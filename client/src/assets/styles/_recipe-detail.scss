@@ -1,0 +1,125 @@
+.detail-wrapper {
+  width: 95%;
+  margin-top: 15vh;
+  max-width: 800px;
+  position: relative;
+  padding-bottom: 4rem;
+  h4 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
+
+.recipe-title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.recipe-link {
+  color: $red;
+
+  &:hover {
+    text-decoration: underline;
+    color: $blue;
+  }
+}
+
+.recipe-source {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.875rem auto;
+  background-color: $red;
+  padding: 0.75rem;
+  box-shadow: $boxShadow;
+  &:hover {
+    filter: brightness(110%);
+  }
+  p,
+  a {
+    text-align: center;
+    width: 100%;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+    color: white;
+  }
+}
+
+.back-btn {
+  color: black;
+  box-shadow: $boxShadow;
+  padding: 12px;
+  color: white;
+  background-color: $red;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  // border-radius: 6px;
+  margin-left: 8px;
+  margin-top: 2rem;
+}
+
+.recipe-image {
+  margin: 0 auto;
+}
+
+.calorie-count {
+  text-align: center;
+  font-weight: 100;
+}
+
+.recipe-content {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  h4 {
+    margin: 1.25rem 0;
+    color: $red;
+    font-size: 1.75rem;
+  }
+}
+
+.cautions,
+.diet-labels,
+.health-labels {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  line-height: 2rem;
+  margin-left: 1rem;
+  li {
+    margin-right: 1rem;
+    font-weight: 300;
+    white-space: nowrap;
+    font-size: 1.15rem;
+  }
+}
+
+.ingredients {
+  list-style: none;
+  margin-left: 1rem;
+  font-size: 1.15rem;
+  font-weight: 100;
+  li {
+    margin: 2rem 0;
+  }
+}
+
+.recipe-interact {
+  padding: 24px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    margin-left: 8px;
+  }
+}
